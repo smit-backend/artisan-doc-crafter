@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/artisan-doc-crafter",
+    "description": "Executive Artisan command parsing git-staged PHP files to auto-generate precise, PSR-12 compliant docblocks via LLMs.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\DocCrafter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\DocCrafter\\PackageServiceProvider"
+            ]
+        }
+    }
+}
